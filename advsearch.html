@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="advstyles.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Advance Search</title>
+    </head>
+    <body>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" >
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <a href="index.html"><label class="logo">Google</label></a>
+            <ul>
+                <li><a href="index.html" >Google</a></li>
+                <li><a href="images.html" >Search Images</a></li>
+                <li><a href="advsearch.html" >Advance Search</a></li>
+            </ul>
+        </nav>
+
+        <p style="padding-left: 25px; padding-top: 20px; padding-bottom: 20px; font-size: 20px;color: red;" >Advance Search</p>
+        <hr>
+
+
+        <h3><p style="padding-left: 25px; padding-top: 25px; font-size: 15px;padding-bottom: 25px;">Find Pages with....</p><h3>
+
+        <form action="https://google.com/search">
+
+            <label class="label" >all of this words: </label>
+            <input type="text" style="left:10%;" name="as_q"><br>
+
+            <label class="label" >this exact word or phrase: </label>
+            <input type="text" name="as_epq"><br>
+
+            <label class="label" >any of these words: </label>
+            <input type="text" name="as_oq"><br>
+
+            <label class="label" >none of these words: </label>
+            <input type="text" name="as_eq"><br>
+
+            <div class="center">
+                <input type="submit" value="Advance Search">
+            </div>
+        </form>
+      
+    </body>
+</html>

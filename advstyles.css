@@ -1,0 +1,57 @@
+.label{
+    font-size: 13px;
+
+    width: 190px;
+    display: inline-block;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+form{
+    padding-left:25px;
+}
+
+input[type="text"]{
+    width: 500px;
+    height: 25px;
+
+} 
+input:focus{
+    border-color: #4d88ff;
+}
+
+input[type="submit"]{
+    color :white;
+    background-color: #4d88ff; 
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;   
+}
+
+.center{
+    padding-top: 20px ;
+    padding-left: 300px;
+}
+
+
+@media(max-width:700px){
+    input[type="text"]{
+        width: 250px;
+        height: 25px;
+    } 
+    
+    .center{
+        padding-left: 150px;
+    }
+
+}
+
+@media(max-width:400px){
+    .center{
+        padding-left: 50px;
+    }
+}

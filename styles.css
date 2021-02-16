@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+  
+}
+/* navbar */
+nav{
+    background:#F3F7F6 ;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color:black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 50px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:black;
+    font-size:17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform:uppercase;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.google{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 20px;  
+}
+.google1{
+    display: none;
+}
+
+ 
+
+.form{
+    text-align: center;
+}
+
+
+
+input[type="text"]{
+    width: 600px;
+    height: 25px;
+    outline: none;
+    border-color:  black;
+    border-width:thin ;
+    height: 50px;
+    font-size: 20px;
+} 
+
+input[type="submit"]{
+    color :white;
+    background-color:  #007bff; 
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;   
+}
+
+.submit{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 200px;
+        height: 100vh;
+        background:white;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .google{
+        display: none;
+    }
+    .google1{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        padding-top: 112px;
+        padding-bottom: 20px;
+    } 
+
+    input[type="text"]{
+        width: 450px;
+        height: 40px;
+    }
+
+}
+
+
+@media(max-width:500px){
+    input[type="text"]{
+        width: 250px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
