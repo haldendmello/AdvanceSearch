@@ -1,5 +1,6 @@
 # cs50 project0 search
 
+[Youtube video link](https://youtu.be/C3TNNn7HZnc)
 
 ## ScreenShorts
 
